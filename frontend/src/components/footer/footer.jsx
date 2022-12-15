@@ -2,8 +2,10 @@ import "./footer.css";
 
 function Footer(){
     return(
-        <footer className="rodape align-center">
-            Todos os direitos reservados - 2022.
+        <footer className="rodape">
+            <div className="container text-center">
+                Todos os direitos reservados - 2022.
+            </div>
         </footer>
     )
 }
