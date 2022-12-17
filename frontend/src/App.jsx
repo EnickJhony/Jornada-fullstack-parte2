@@ -1,9 +1,9 @@
 import './App.css'
 import Header from './components/header/header'
 import Footer from './components/footer/footer'
-import Card from './components/card/card'
 import { Routes, Route } from 'react-router-dom'
 import ItemList from './components/itemList/itemList'
+import Create from './components/create/create'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<ItemList />} />
-        <Route path="/cadastro" element={'Cadastro'} />
+        <Route path="/cadastro" element={<Create />} />
       </Routes>
 
       <Footer />

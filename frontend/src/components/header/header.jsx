@@ -1,5 +1,6 @@
-import MarcaOcean from "../../assets/brand.svg";
-import "./header.css";
+import MarcaOcean from '../../assets/brand.svg'
+import './header.css'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -10,20 +11,19 @@ function Header() {
             <img src={MarcaOcean} alt="" width={50} />
           </div>
           <div className="col-10">
-            <a href="#" className="link">
-              Link 1
-            </a>
-            <a href="#" className="link">
-              Link 2
-            </a>
-            <a href="#" className="link">
-              Link 3
-            </a>
+            <Link className="link" to="/">
+              {' '}
+              Inicio{' '}
+            </Link>
+            <Link className="link" to="/cadastro">
+              {' '}
+              Cadastro{' '}
+            </Link>
           </div>
         </div>
       </div>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header
